@@ -18,17 +18,20 @@
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script>
         // Initialize Firebase
+        // Initialize Firebase
         const config = {
-            apiKey: "AIzaSyA-z-C-pLzIlnD06xGSlhO7sjtL5Yxh4II",
-            authDomain: "web-mobile-specialist.firebaseapp.com",
-            databaseURL: "https://web-mobile-specialist.firebaseio.com",
-            projectId: "web-mobile-specialist",
-            storageBucket: "web-mobile-specialist.appspot.com",
-            messagingSenderId: "214112937501"
+            apiKey: "AIzaSyAiJKe-P7fEXxWbcuNGXl3d5BnnaWO-RkU",
+            authDomain: "web-mobile-specialis.firebaseapp.com",
+            databaseURL: "https://web-mobile-specialis.firebaseio.com",
+            projectId: "web-mobile-specialis",
+            storageBucket: "",
+            messagingSenderId: "988508404005"
         };
         firebase.initializeApp(config);
         // Get a reference to the database service
         const database = firebase.database();
+        const provider = new firebase.auth.GithubAuthProvider();
+        provider.addScope('repo');
     </script>
     <script src="./node_modules/redux/dist/redux.js"></script>
     <link rel="import" href="./bower_components/polymer-redux/polymer-redux.html">
